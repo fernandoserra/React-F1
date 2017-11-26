@@ -67,7 +67,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    axios.get('http://ergast.com/api/f1/2017/driverStandings.json')
+    axios.get('https://ergast.com/api/f1/2017/driverStandings.json')
       .then(res => {
         console.log(res.data)
         this.setState({
